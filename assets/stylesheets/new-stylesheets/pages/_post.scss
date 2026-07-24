@@ -91,9 +91,11 @@
       table {
         width: 100%;
         margin-bottom: 1.5em;
-        border-collapse: collapse;
+        border-collapse: separate;
+        border-spacing: 0;
         border: 1px solid var(--blog-table-border-color);
         border-radius: 10px;
+        overflow: hidden;
 
         th,
         td {
@@ -104,14 +106,6 @@
         th {
           background: var(--blog-table-header-bg);
           font-weight: 600;
-
-          &:first-child {
-            border-top-left-radius: 10px;
-          }
-
-          &:last-child {
-            border-top-right-radius: 10px;
-          }
         }
 
         tr:last-child td {
